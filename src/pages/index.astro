@@ -8,7 +8,6 @@ import Card from "../components/card";
 import { getCollection, render } from "astro:content";
 const allPosts = await getCollection("home");
 const allContent = await Promise.all(allPosts.map((post) => render(post)));
-console.log(allContent);
 ---
 
 <RootLayout>
