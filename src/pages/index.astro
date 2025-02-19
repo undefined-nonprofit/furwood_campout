@@ -1,0 +1,25 @@
+---
+import { DarkThemeToggle } from "flowbite-react";
+import RootLayout from "../layouts/index.astro";
+import Carousel from "../components/carousel";
+import { Heading1, P } from "../components/elements";
+import olliePic from "../../assets/ollie.jpg";
+import Card from "../components/card";
+import { getCollection, render } from "astro:content";
+const allPosts = await getCollection("home");
+const allContent = await Promise.all(allPosts.map((post) => render(post)));
+console.log(allContent);
+---
+
+<RootLayout>
+  <main class="flex flex-col items-center justify-start gap-2 dark:bg-gray-800">
+    <Carousel client:load>
+      <img src=`${olliePic.src}` />
+    </Carousel>
+    {
+      allContent.map(({ Content }) => {
+        return <Card>{<Content />}</Card>;
+      })
+    }
+  </main>
+</RootLayout>

@@ -1,5 +1,5 @@
 {
-  description = "A Nix-flake-based Go development environment";
+  description = "A Nix-flake-based  development environment";
 
   # GitHub URLs for the Nix inputs we're using
   inputs = {
@@ -14,7 +14,7 @@
       let
         pkgs = import nixpkgs { inherit system; };
 
-        node = pkgs.nodejs_latest;
+        node = pkgs.nodejs_23;
       in {
         devShells = {
           default = pkgs.mkShell {
