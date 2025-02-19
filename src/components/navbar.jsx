@@ -6,6 +6,7 @@ export default () => {
       <Navbar.Brand>
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Furwood Campout</span>
       </Navbar.Brand>
+      <Navbar.Toggle />
       <Navbar.Collapse>
         <Navbar.Link href="#" active>
           Home
