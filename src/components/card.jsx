@@ -1,8 +1,6 @@
-import { Card } from "flowbite-react";
-import { Heading1 } from "./elements";
-
+import { styles } from "./texture";
 
 export default ({ children }) => (
-    <Card className="w-full bg-secondary-50">
+    <div className="card-body" style={styles}>
         {children}
-    </Card>)
+    </div>)

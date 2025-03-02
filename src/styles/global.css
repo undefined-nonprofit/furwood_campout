@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+    --color-tan-1:  rgba(214, 191, 120, 1);
+    --color-tan-2:  rgba(255, 244, 209, 1);
+    --color-wood-1: rgba(112, 69, 60, 1);
+    --color-wood-2: rgba(57, 57, 57, 1);
+}
+

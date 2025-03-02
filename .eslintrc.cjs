@@ -7,7 +7,6 @@ module.exports = {
     "eslint:recommended",
     "plugin:astro/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:tailwindcss/recommended",
     "prettier",
   ],
   overrides: [

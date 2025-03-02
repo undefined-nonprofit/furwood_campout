@@ -1,17 +1,16 @@
 ---
-import { DarkThemeToggle } from "flowbite-react";
 import RootLayout from "../layouts/index.astro";
 import Carousel from "../components/carousel";
-import { Heading1, P } from "../components/elements";
 import olliePic from "../../assets/ollie.jpg";
 import Card from "../components/card";
 import { getCollection, render } from "astro:content";
 const allPosts = await getCollection("home");
 const allContent = await Promise.all(allPosts.map((post) => render(post)));
+import woodTexture from "../../assets/wood.jpg";
 ---
 
 <RootLayout>
-  <main class="flex flex-col items-center justify-start gap-2 dark:bg-gray-800">
+  <main>
     <Carousel client:load>
       <img src=`${olliePic.src}` />
     </Carousel>
@@ -21,4 +20,14 @@ const allContent = await Promise.all(allPosts.map((post) => render(post)));
       })
     }
   </main>
+  <style is:global define:vars={{ woodTexture: `url(${woodTexture.src})` }}>
+    .wood-bg {
+      background: linear-gradient(
+          0deg,
+          rgba(214, 191, 120, 0.8) 13.5%,
+          rgba(255, 244, 209, 0.1) 100%
+        ),
+        --woodTexture;
+    }
+  </style>
 </RootLayout>

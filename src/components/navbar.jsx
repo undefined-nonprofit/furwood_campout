@@ -1,21 +1,41 @@
-import { Button, Navbar } from "flowbite-react";
+import telegramIcon from "../../assets/telegram.svg";
+import { styles } from "./texture";
 
 export default () => {
+
+  const navItems = [
+    { label: "Home", link: "" },
+    { label: "Schedule", link: "" },
+    { label: "Tickets", link: "" }
+  ].map(item => (
+    <li><a href={item.link}>{item.label}</a></li>
+  ))
+
   return (
-    <Navbar fluid rounded className="w-full bg-secondary-50">
-      <Navbar.Brand>
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Furwood Campout</span>
-      </Navbar.Brand>
-      <Navbar.Toggle />
-      <Navbar.Collapse>
-        <Navbar.Link href="#" active>
-          Home
-        </Navbar.Link>
-        <Navbar.Link href="#">Home</Navbar.Link>
-        <Navbar.Link href="#">Tickets</Navbar.Link>
-        <Navbar.Link href="#">Telegram</Navbar.Link>
-        <Navbar.Link href="#">Schedule</Navbar.Link>
-      </Navbar.Collapse>
-    </Navbar>
+    <div class={`navbar shadow-sm rounded-xl text-gray-900 px-5 wood-bg`} >
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            {navItems}
+          </ul>
+        </div>
+        <a className="btn btn-ghost text-xl">Furwood Campout</a>
+      </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">
+          {navItems}
+        </ul>
+      </div>
+      <div className="navbar-end">
+        <a href=""><img src={telegramIcon.src} className="w-8"></img></a>
+      </div>
+    </div>
+
+
   )
 }

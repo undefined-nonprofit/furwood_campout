@@ -1,9 +1,7 @@
 ---
-import { ThemeModeScript } from "flowbite-react";
 import Navbar from "../components/navbar";
-import background from "../../assets/bg.jpg";
-import { getImage } from "astro:assets";
-import treesSvg from "../../assets/trees.svg";
+import Card from "../components/card";
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -13,13 +11,14 @@ import treesSvg from "../../assets/trees.svg";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
-    <ThemeModeScript />
   </head>
   <body
     class=`bg-[linear-gradient(to_right_bottom,rgba(49,84,44,0.8),rgba(16,71,52,0.8))] min-h-screen w-dvw h-dvh flex flex-col gap-4 items-center justify-start p-4`
   >
     <Navbar client:load />
-    <slot />
-    <style></style>
+    <Card>
+      <slot />
+      <style></style>
+    </Card>
   </body>
 </html>
