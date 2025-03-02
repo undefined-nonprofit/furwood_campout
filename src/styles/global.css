@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+    --color-tan-1:  rgba(214, 191, 120, 1);
+    --color-tan-2:  rgba(255, 244, 209, 1);
+    --color-tan-3:  rgba(219, 197, 123, .5);
+    --color-wood-1: rgba(112, 69, 60, 1);
+    --color-wood-2: rgba(57, 57, 57, 1);
+    --color-wood-3: rgba(109, 74, 71, .8);
+    --font-quicksand: "Quicksand", sans-serif; 
+    --font-amitic: "Amatic SC", sans-serif;
+}
+
+.wood-bg {
+    background:
+    linear-gradient(
+        0deg,
+        var(--color-tan-3) 13.5%,
+        var(--color-wood-3) 100%
+    ),
+    url('/images/wood.jpg');
+
+    background-size: cover
+
+}
+
