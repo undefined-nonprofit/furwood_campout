@@ -12,7 +12,7 @@ export default () => {
   ))
 
   return (
-    <div class={`navbar shadow-sm rounded-xl text-gray-900 px-5 wood-bg`} >
+    <div className={`navbar shadow-sm rounded-xl text-gray-900 px-5 wood-bg`} >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -20,18 +20,16 @@ export default () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            className="menu menu-sm dropdown-content glass rounded-box z-1 mt-3 w-52 p-2 shadow">
             {navItems}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Furwood Campout</a>
+        <a className="font-quicksand font-bold lg:text-5xl drop-shadow-lg text-nowrap">Furwood Campout</a>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+      <div className="navbar-end gap-12">
+        <ul className="menu menu-horizontal px-1 hidden lg:flex uppercase underline font-amitic font-bold text-3xl gap-10">
           {navItems}
         </ul>
-      </div>
-      <div className="navbar-end">
         <a href=""><img src={telegramIcon.src} className="w-8"></img></a>
       </div>
     </div>
