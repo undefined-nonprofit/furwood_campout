@@ -5,24 +5,32 @@
 @theme {
     --color-tan-1:  rgba(214, 191, 120, 1);
     --color-tan-2:  rgba(255, 244, 209, 1);
-    --color-tan-3:  rgba(219, 197, 123, .5);
+    --color-tan-3:  rgba(219, 197, 123, 1);
     --color-wood-1: rgba(112, 69, 60, 1);
     --color-wood-2: rgba(57, 57, 57, 1);
-    --color-wood-3: rgba(109, 74, 71, .8);
+    --color-wood-3: rgba(109, 74, 71, 1);
     --font-quicksand: "Quicksand", sans-serif; 
     --font-amitic: "Amatic SC", sans-serif;
 }
 
 .wood-bg {
     background:
+    url('/images/wood.png'),
     linear-gradient(
         0deg,
-        var(--color-tan-3) 13.5%,
-        var(--color-wood-3) 100%
-    ),
-    url('/images/wood.jpg');
+        var(--color-wood-3) 10%,
+        var(--color-tan-3) 80%
+    );
 
-    background-size: cover
-
+    background-repeat: repeat;
 }
 
+.nav-shadow {
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.stars {
+    background:
+        url('/images/stars.png'),
+        repeat;
+}

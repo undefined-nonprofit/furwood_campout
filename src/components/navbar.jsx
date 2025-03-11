@@ -12,7 +12,7 @@ export default () => {
   ))
 
   return (
-    <div className={`navbar shadow-sm rounded-xl text-gray-900 px-5 wood-bg`} >
+    <div className={`navbar shadow-sm rounded-xl text-gray-900 px-5 wood-bg min-h-24`} >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@ export default () => {
             {navItems}
           </ul>
         </div>
-        <a className="font-quicksand font-bold lg:text-5xl drop-shadow-lg text-nowrap">Furwood Campout</a>
+        <a className="font-quicksand font-bold lg:text-5xl drop-shadow-2xl text-nowrap nav-shadow">Furwood Campout</a>
       </div>
       <div className="navbar-end gap-12">
         <ul className="menu menu-horizontal px-1 hidden lg:flex uppercase underline font-amitic font-bold text-3xl gap-10">
