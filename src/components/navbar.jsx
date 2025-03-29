@@ -4,9 +4,9 @@ import { styles } from "./texture";
 export default () => {
 
   const navItems = [
-    { label: "Home", link: "" },
-    { label: "Schedule", link: "" },
-    { label: "Tickets", link: "" }
+    { label: "Home", link: "/" },
+    { label: "Schedule", link: "/schedule" },
+    { label: "Tickets", link: "/tickets" }
   ].map(item => (
     <li><a href={item.link}>{item.label}</a></li>
   ))
@@ -24,7 +24,7 @@ export default () => {
             {navItems}
           </ul>
         </div>
-        <a className="font-quicksand font-bold lg:text-5xl text-4xl drop-shadow-2xl text-nowrap nav-shadow">Furwood Campout</a>
+        <a href="#" className="font-quicksand font-bold lg:text-5xl text-3xl drop-shadow-2xl text-nowrap nav-shadow">Furwood Campout</a>
       </div>
       <div className="navbar-end gap-12">
         <ul className="menu menu-horizontal px-1 hidden lg:flex uppercase underline font-amitic font-bold text-3xl gap-10">
