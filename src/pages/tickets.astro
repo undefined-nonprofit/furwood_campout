@@ -3,16 +3,21 @@ import RootLayout from "../layouts/index.astro";
 import Carousel from "../components/carousel";
 import olliePic from "../../assets/ollie.jpg";
 import Card from "../components/card";
+import { Content as Booking } from "../content/booking.md";
+import Prose from "../components/Prose.astro";
 import { getCollection, render } from "astro:content";
 const allPosts = await getCollection("home");
 const allContent = await Promise.all(allPosts.map((post) => render(post)));
 ---
 
 <RootLayout>
-  <main class="flex flex-col items-center w-full p-5 gap-5">
+  <main class="flex flex-col items-center w-full gap-5">
     <div
-      class="bg-amber-100/80 p-8 rounded-lg shadow-md w-full text-gray-900 flex items-center justify-center"
+      class="bg-amber-100/80 p-8 rounded-lg shadow-md text-gray-900 flex flex-col items-center justify-center"
     >
+      <Prose>
+        <Booking />
+      </Prose>
       <!-- Ticket Tailor Widget. Paste this into your website where you want the widget to appear. Do not change the code or the widget may not work properly. -->
       <div class="tt-widget">
         <div class="tt-widget-fallback">

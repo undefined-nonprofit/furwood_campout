@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quicksand:wght@300..700&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
+@plugin '@tailwindcss/typography';
 
 @theme {
     --color-tan-1:  rgba(214, 191, 120, 1);
