@@ -30,7 +30,7 @@ export default () => {
         <ul className="menu menu-horizontal px-1 hidden lg:flex uppercase underline font-amitic font-bold text-3xl gap-10">
           {navItems}
         </ul>
-        <a href=""><img src={telegramIcon.src} className="w-8"></img></a>
+        <a href="https://t.me/+P9zbj7ikXyljYjRh" target="_blank"><img src={telegramIcon.src} className="w-8"></img></a>
       </div>
     </div>
 
