@@ -9,6 +9,36 @@ const allContent = await Promise.all(allPosts.map((post) => render(post)));
 ---
 
 <RootLayout>
-  <main class="flex flex-col items-center w-full p-5 gap-5">Tickets</main>
+  <main class="flex flex-col items-center w-full p-5 gap-5">
+    <div
+      class="bg-amber-100/80 p-8 rounded-lg shadow-md w-full text-gray-900 flex items-center justify-center"
+    >
+      <!-- Ticket Tailor Widget. Paste this into your website where you want the widget to appear. Do not change the code or the widget may not work properly. -->
+      <div class="tt-widget">
+        <div class="tt-widget-fallback">
+          <p>
+            <a
+              href="https://www.tickettailor.com/all-tickets/undefined/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true"
+              target="_blank">Click here to buy tickets</a
+            ><br /><small
+              ><a
+                href="https://www.tickettailor.com?rf=wdg_233975"
+                class="tt-widget-powered"
+                >Sell tickets online with Ticket Tailor</a
+              ></small
+            >
+          </p>
+        </div><script
+          src="https://cdn.tickettailor.com/js/widgets/min/widget.js"
+          data-url="https://www.tickettailor.com/all-tickets/undefined/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true"
+          data-type="inline"
+          data-inline-minimal="true"
+          data-inline-show-logo="false"
+          data-inline-bg-fill="false"
+          data-inline-inherit-ref-from-url-param=""
+          data-inline-ref="website_widget"></script>
+      </div><!-- End of Ticket Tailor Widget -->
+    </div>
+  </main>
   <style is:global></style>
 </RootLayout>
