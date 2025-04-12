@@ -21,8 +21,11 @@ const allContent = await Promise.all(allPosts.map((post) => render(post)));
       <img src="images/wolf.svg" />
       <img src="images/fire.svg" />
     </div>
-    <div class="rounded-xl w-fit">
+    <div class="rounded-xl w-fit relative">
       <img class="lg:rounded-xl drop-shadow-2xl" src=`${olliePic.src}` />
+      <div class="absolute right-2 bottom-1">
+        Photo credit: <a href="https://t.me/Dogzrbarkn">@DogzBarkin</a>
+      </div>
     </div>
     <section
       class="lg:grid lg:grid-cols-2 py-14 lg:px-12 text-gray-900 justify-center flex flex-col items-center gap-8 bg-amber-100/50 rounded-2xl shadow-2xl"
