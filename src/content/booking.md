@@ -29,7 +29,7 @@ If someone is staying in your tent, they’ll need to select the "Existing Tent"
 > **Note**: TRC charges per person, not per campsite, so everyone needs their own camping arrangement—either through this event, a direct booking with TRC, or by joining an existing tent.
 
 ### 4. Looking for RV spots?
-Book directly through TRC and choose the BYO camping ticket option - TRC RV booking page
+Book directly through TRC and choose the BYO camping ticket option - [TRC RV booking page](https://www.camptrc.org/RV-Reservations-(NEW!))
 
 
 ### 5. Final Note
