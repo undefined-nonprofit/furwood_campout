@@ -28,12 +28,9 @@ If someone is staying in your tent, they’ll need to select the "Existing Tent"
 
 > **Note**: TRC charges per person, not per campsite, so everyone needs their own camping arrangement—either through this event, a direct booking with TRC, or by joining an existing tent.
 
-### 5. Looking for RV spots?
+### 4. Looking for RV spots?
 Book directly through TRC and choose the BYO camping ticket option - TRC RV booking page
 
----
 
-### 4. Final Note
+### 5. Final Note
 Once you’ve checked out, you won’t be able to change your tag name or TRC member details. Don’t worry—we’ll follow up with everyone about 30 days before the event to provide a way to update that info.
-
----
