@@ -18,12 +18,15 @@ const allContent = await Promise.all(allPosts.map((post) => render(post)));
       <Prose>
         <Booking />
       </Prose>
+    </div>
+    <!-- Ticket Tailor Widget. Paste this into your website where you want the widget to appear. Do not change the code or the widget may not work properly. -->
+    <div class="w-full flex justify-center items-center *:w-[700px]">
       <!-- Ticket Tailor Widget. Paste this into your website where you want the widget to appear. Do not change the code or the widget may not work properly. -->
       <div class="tt-widget">
         <div class="tt-widget-fallback">
           <p>
             <a
-              href="https://www.tickettailor.com/all-tickets/undefined/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true"
+              href="https://www.tickettailor.com/checkout/new-session/id/5726838/chk/5254/"
               target="_blank">Click here to buy tickets</a
             ><br /><small
               ><a
@@ -34,16 +37,16 @@ const allContent = await Promise.all(allPosts.map((post) => render(post)));
             >
           </p>
         </div><script
+          is:inline
           src="https://cdn.tickettailor.com/js/widgets/min/widget.js"
-          data-url="https://www.tickettailor.com/all-tickets/undefined/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true"
+          data-url="https://www.tickettailor.com/checkout/new-session/id/5726838/chk/5254/"
           data-type="inline"
           data-inline-minimal="true"
           data-inline-show-logo="false"
           data-inline-bg-fill="false"
           data-inline-inherit-ref-from-url-param=""
-          data-inline-ref="website_widget"></script>
+          data-inline-ref=""></script>
       </div><!-- End of Ticket Tailor Widget -->
     </div>
   </main>
-  <style is:global></style>
 </RootLayout>
