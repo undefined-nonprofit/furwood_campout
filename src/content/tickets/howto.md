@@ -4,7 +4,7 @@ title: "booking"
 
 ## How to Book Your Spot at Furwood
 
-Follow these steps to register with TRC, then scroll down to **select your site** using the **interactive map**!
+Follow these steps to register with TRC, then **purchase your tickets** using the [**interactive map**](#widget)!
 
 ### Grab Your TRC Membership Info
 - **New to TRC?** Sign up here: [https://camptrc.org/Join](https://camptrc.org/Join).  

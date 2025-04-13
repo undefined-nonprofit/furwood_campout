@@ -24,7 +24,7 @@ export default () => {
             {navItems}
           </ul>
         </div>
-        <a href="/" className="font-quicksand font-bold lg:text-5xl text-3xl drop-shadow-2xl text-nowrap nav-shadow">Furwood Campout</a>
+        <a href="/" className="font-quicksand font-bold lg:text-5xl text-2xl drop-shadow-2xl text-nowrap nav-shadow">Furwood Campout</a>
       </div>
       <div className="navbar-end gap-12">
         <ul className="menu menu-horizontal px-1 hidden lg:flex uppercase underline font-amitic font-bold text-3xl gap-10">
