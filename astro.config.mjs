@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
+import { targetBlank } from "./src/plugins/targetBlank";
 
 import tailwindcss from "@tailwindcss/vite";
 
@@ -7,6 +8,9 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   integrations: [react()],
 
+  markdown: {
+    rehypePlugins: [[targetBlank, { domain: 'furwoodcampout.com' }]],
+  },
   vite: {
     plugins: [tailwindcss()],
   },
