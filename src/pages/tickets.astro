@@ -1,52 +1,37 @@
 ---
 import RootLayout from "../layouts/index.astro";
-import Carousel from "../components/carousel";
-import olliePic from "../../assets/ollie.jpg";
-import Card from "../components/card";
-import { Content as Booking } from "../content/booking.md";
+import { Content as HowTo } from "../content/tickets/howto.md";
+import { Content as Faqs } from "../content/tickets/faqs.md";
 import Prose from "../components/Prose.astro";
-import { getCollection, render } from "astro:content";
-const allPosts = await getCollection("home");
-const allContent = await Promise.all(allPosts.map((post) => render(post)));
+import TicketWidget from "../components/TicketWidget.astro";
 ---
 
 <RootLayout>
-  <main class="flex flex-col items-center w-full gap-5">
-    <div
-      class="bg-amber-100/80 p-8 rounded-lg shadow-md text-gray-900 flex flex-col items-center justify-center"
-    >
-      <Prose>
-        <Booking />
-      </Prose>
-    </div>
-    <!-- Ticket Tailor Widget. Paste this into your website where you want the widget to appear. Do not change the code or the widget may not work properly. -->
-    <div class="w-full flex justify-center items-center *:w-[700px]">
-      <!-- Ticket Tailor Widget. Paste this into your website where you want the widget to appear. Do not change the code or the widget may not work properly. -->
-      <div class="tt-widget">
-        <div class="tt-widget-fallback">
-          <p>
-            <a
-              href="https://www.tickettailor.com/checkout/new-session/id/5726838/chk/5254/"
-              target="_blank">Click here to buy tickets</a
-            ><br /><small
-              ><a
-                href="https://www.tickettailor.com?rf=wdg_233975"
-                class="tt-widget-powered"
-                >Sell tickets online with Ticket Tailor</a
-              ></small
-            >
-          </p>
-        </div><script
-          is:inline
-          src="https://cdn.tickettailor.com/js/widgets/min/widget.js"
-          data-url="https://www.tickettailor.com/checkout/new-session/id/5726838/chk/5254/"
-          data-type="inline"
-          data-inline-minimal="true"
-          data-inline-show-logo="false"
-          data-inline-bg-fill="false"
-          data-inline-inherit-ref-from-url-param=""
-          data-inline-ref=""></script>
-      </div><!-- End of Ticket Tailor Widget -->
+  <main class="">
+    <div class="grid w-full gap-5 px-2 sm:grid-cols-1 lg:grid-cols-4">
+      <!-- HowTo Section -->
+      <div
+        class="flex flex-col rounded-lg bg-amber-100/80 p-8 text-gray-900 shadow-md lg:col-span-2"
+      >
+        <Prose>
+          <HowTo />
+        </Prose>
+      </div>
+      <!-- TicketWidget Section -->
+      <div
+        class="flex flex-col rounded-lg bg-white p-8 shadow-md lg:col-span-2 lg:row-span-2"
+      >
+        <TicketWidget />
+      </div>
+      <!-- Faqs Section -->
+      <div
+        id="faqs"
+        class="flex flex-col rounded-lg bg-amber-100/80 p-8 text-gray-900 shadow-md lg:col-span-2"
+      >
+        <Prose>
+          <Faqs />
+        </Prose>
+      </div>
     </div>
   </main>
 </RootLayout>
