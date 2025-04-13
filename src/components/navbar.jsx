@@ -1,5 +1,4 @@
 import telegramIcon from "../../assets/telegram.svg";
-import { styles } from "./texture";
 
 export default () => {
 
