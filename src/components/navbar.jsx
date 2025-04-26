@@ -3,9 +3,10 @@ import telegramIcon from "../../assets/telegram.svg";
 export default () => {
 
   const navItems = [
-    { label: "Home", link: "/" },
-    { label: "Schedule", link: "/schedule" },
-    { label: "Tickets", link: "/tickets" }
+    { label: "Volunteer", link: "/volunteer" },
+    { label: "Info", link: "/info" },
+    { label: "Tickets", link: "/tickets" },
+    { label: "Sponsors", link: "/sponsors" },
   ].map(item => (
     <li><a href={item.link}>{item.label}</a></li>
   ))
@@ -19,14 +20,14 @@ export default () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content glass rounded-box z-1 mt-3 w-52 p-2 shadow">
+            className="menu menu-sm dropdown-content glass rounded-box z-1 mt-3 w-52 p-2 shadow ">
             {navItems}
           </ul>
         </div>
         <a href="/" className="font-quicksand font-bold lg:text-5xl text-2xl drop-shadow-2xl text-nowrap nav-shadow">Furwood Campout</a>
       </div>
-      <div className="navbar-end gap-12">
-        <ul className="menu menu-horizontal px-1 hidden lg:flex uppercase underline font-amitic font-bold text-3xl gap-10">
+      <div className="navbar-end gap-4">
+        <ul className="menu menu-horizontal px-1 hidden lg:flex uppercase underline font-amitic font-bold text-3xl">
           {navItems}
         </ul>
         <a href="https://t.me/+P9zbj7ikXyljYjRh" target="_blank"><img src={telegramIcon.src} className="w-8"></img></a>

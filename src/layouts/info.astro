@@ -1,0 +1,14 @@
+---
+import RootLayout from "../layouts/index.astro";
+import Prose from "../components/Prose.astro";
+import Nav from "../components/info/nav";
+---
+
+<RootLayout>
+    <main class="flex flex-col items-center w-full p-5 gap-5">
+        <Nav client:load />
+        <div class="bg-amber-100/80 p-8 rounded-lg shadow-md">
+            <slot />
+        </div>
+    </main>
+</RootLayout>
