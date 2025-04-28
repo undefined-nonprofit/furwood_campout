@@ -1,5 +1,5 @@
 /** @type {import('prettier').Config} */
-const plugin = require('tailwindcss/plugin')
+import plugin from 'tailwindcss/plugin'
 export default {
   plugins: ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
   overrides: [

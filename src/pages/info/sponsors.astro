@@ -1,0 +1,21 @@
+---
+import InfoLayout from "../../layouts/info.astro";
+import Prose from "../../components/Prose.astro";
+import fetchNW from "../../../assets/fetchnw.png";
+import shinyDog from "../../../assets/shinydog.png";
+import { Content as Sponsors } from "../../content/info/sponsors.md";
+---
+
+<InfoLayout>
+  <Prose>
+    <Sponsors />
+  </Prose>
+  <aside
+    class="flexitems-center flex h-full w-full shrink-0 justify-around gap-10"
+  >
+    <img class="w-[300px] shrink-0" src=`${shinyDog.src}` />
+    <img class="w-[300px] shrink-0" src=`${fetchNW.src}` />
+  </aside>
+</InfoLayout>
+
+<style is:global></style>

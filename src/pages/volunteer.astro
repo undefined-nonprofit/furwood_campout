@@ -1,0 +1,31 @@
+---
+import RootLayout from "../layouts/index.astro";
+---
+
+<RootLayout>
+    <main class="flex flex-col items-center w-full p-5 gap-5">
+        <div class="bg-amber-100/80 p-8 rounded-lg shadow-md">
+            <section class="text-center text-4xl font-bold text-gray-900 mb-5">
+                Lend a Paw!
+            </section>
+            <div class="w-full p-5 rounded-2xl bg-white">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdfnZZxCXVRhTOe8BN6GprGFg6Vn_eu_-qExm4bEBZCOeTYog/viewform?embedded=true"
+                    width="640"
+                    height="1632"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0">Loading…</iframe
+                >
+            </div>
+        </div>
+    </main>
+    <style is:global></style>
+    <style>
+        @media screen and (max-width:767px) {
+        iframe[src*="google.com/forms"] {
+            width: 100% !important;
+            height: 900px;
+        }
+    </style>
+</RootLayout>

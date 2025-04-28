@@ -1,16 +1,13 @@
 ---
 import RootLayout from "../layouts/index.astro";
-import { Content as Schedule } from "../content/info/schedule.md";
-import Prose from "../components/Prose.astro";
+import Nav from "../components/info/nav.astro";
 ---
 
 <RootLayout>
   <main class="flex w-full flex-col items-center gap-5 p-5">
+    <Nav />
     <div class="rounded-lg bg-amber-100/80 p-8 shadow-md">
-      <Prose>
-        <Schedule />
-      </Prose>
+      <slot />
     </div>
   </main>
-  <style is:global></style>
 </RootLayout>

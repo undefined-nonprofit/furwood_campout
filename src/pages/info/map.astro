@@ -1,0 +1,12 @@
+---
+import InfoLayout from "../../layouts/info.astro";
+import Prose from "../../components/Prose.astro";
+import map from "../../../assets/map.png";
+---
+
+<InfoLayout>
+  <Prose><h1>Map</h1></Prose>
+  <img class="shrink-0" src=`${map.src}` />
+</InfoLayout>
+
+<style is:global></style>
