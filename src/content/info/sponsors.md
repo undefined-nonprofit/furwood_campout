@@ -1,13 +1,9 @@
 # Thank you to our sponsors!
 
-[Shiny Dog Productions Logo]
-
 Shiny Dog Productions  
 [Shinydogproductions.com](http://shinydogproductions.com)
 
 Thank you to Shiny Dog Productions for hooking us up with the equipment we need for our play space! Shiny Dog creates experiences for the Queer and Furry communities , from pop-up events to bar nights and weekend getaways. They build spaces where you can be yourself, and we’re so lucky to have their support.
-
-[FetchNW Logo]
 
 FetchNW  
 [FetchNW.com](http://fetchnw.com)
