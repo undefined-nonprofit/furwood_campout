@@ -1,0 +1,28 @@
+---
+const navItems = [
+  { label: "General", link: "/info/" },
+  { label: "Map", link: "/info/map" },
+  { label: "Sponsors", link: "/info/sponsors" },
+];
+import classNames from "classnames";
+---
+
+<ul
+  class="menu rounded-box lg:menu-horizontal w-full justify-around bg-amber-100/80 text-2xl text-gray-900"
+>
+  {
+    navItems.map((item) => {
+      const classes = classNames({
+        "menu-active": Astro.url.pathname === item.link,
+      });
+      console.log("hello", Astro.url.pathname);
+      return (
+        <li>
+          <a href={item.link} class={classes}>
+            {item.label}
+          </a>
+        </li>
+      );
+    })
+  }
+</ul>

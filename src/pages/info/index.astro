@@ -1,14 +1,13 @@
 ---
 import InfoLayout from "../../layouts/info.astro";
 import Prose from "../../components/Prose.astro";
-import Nav from "../../components/info/nav";
+import { Content as CheckIn } from "../../content/info/checkin.md";
 ---
 
 <InfoLayout>
-    <p class="text-center text-lg text-gray-700 mt-4">
-        Stay tuned for updates on the schedule for Furwood Campout. We'll share
-        details about activities, performances, and more!
-    </p>
+  <Prose>
+    <CheckIn />
+  </Prose>
 </InfoLayout>
 
 <style is:global></style>

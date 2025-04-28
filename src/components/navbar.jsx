@@ -6,7 +6,7 @@ export default () => {
     { label: "Volunteer", link: "/volunteer" },
     { label: "Info", link: "/info" },
     { label: "Tickets", link: "/tickets" },
-    { label: "Sponsors", link: "/sponsors" },
+    { label: "Schedule", link: "/schedule" },
   ].map(item => (
     <li><a href={item.link}>{item.label}</a></li>
   ))
