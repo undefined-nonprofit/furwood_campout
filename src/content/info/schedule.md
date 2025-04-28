@@ -16,9 +16,8 @@ The schedule may vary, given the nature of being ... in nature ... locations and
 - **11:30 AM** – **Brunch** at Site 500.
 - **1:00 PM** – **Splash Time**  
   Head down to the creek for some beachy fun.
-- **2:00 PM** – **Creek Group Photo** — tails up, smiles on!
-- **3:00 PM** – **Skill Demos** (Flogging, Rope)
-- **4:00 PM** – **Full Floof Group Photo**
+- **2:00 PM** – **Creek (Non-fursuit) Group Photo** — tails up, smiles on! We'll be taking a big group photo of everyone in their swimwear (or less?).
+- **4:00 PM** – **Full Suit Group Photo** Fursuit photo of all of us critters!
 - **7:00 PM** – **Group Dinner** at Site 500.
 - **9:00 PM** – **Rave 'n' Roar**  
   Where paws hit the floor! Dance party under the stars in the woods.
