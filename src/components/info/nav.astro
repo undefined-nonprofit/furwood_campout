@@ -15,7 +15,6 @@ import classNames from "classnames";
       const classes = classNames({
         "menu-active": Astro.url.pathname === item.link,
       });
-      console.log("hello", Astro.url.pathname);
       return (
         <li>
           <a href={item.link} class={classes}>
